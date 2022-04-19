@@ -1,0 +1,538 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*====  VARIABLES ============================ */
+:root {
+    --header-height: 4.5rem;
+
+    /* colors */
+    --hue: 419;
+    /* HSL color mode */
+    --base-color: rgb(237, 215, 70);
+    /* --base-color: hsl(var(--hue) 36% 57%); */
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    /* --title-color: hsl(var(--hue) -10% 24%); */
+    --title-color: rgb(12, 133, 20);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1.5rem;
+
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+}
+/* ========== BASE ========== */
+body {
+
+    /*  400 é o peso da fonte e 1rem o tamanho da font = 16px    */
+    font: 400 1rem 'DM Sans', sans-serif;
+    color: var(--text-color);
+    background: var(--body-color);
+    -webkit-font-smoothing: antialiased; /* Deixa a font mais fininha */
+}
+
+.title {
+    font: 700 var(--title-font-size) var(--title-font);
+    color: var(--title-color);
+    -webkit-font-smoothing: auto;
+    padding: 15px 0 15px 0;
+}
+
+/* ========== Menu ========== */
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* 
+img {
+    max-width: 100%;
+    object-fit: cover;
+} */
+
+a:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+#logo {
+    font: 700 1.41rem 'Poppins', sans-serif;
+    color: var(--title-color);
+}
+
+#logo span {
+    color: var(--base-color);
+}
+
+#logo-alt span {
+    color: var(--body-color);
+}
+
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--base-color);
+}
+
+#menu {
+    display: flex;
+    list-style: none;/* tira as bolinhas da li */
+    gap: .5rem; /*espaço entre os menus*/
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+    color: var(--title-color);
+    font: 700 1rem 'Poppins', sans-serif;
+}
+
+/* .button {
+    background-color: green;
+    color: var(--text-color-light);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem var(--body-font);
+    transition: background 0.3s;
+} */
+
+.button {
+    /* background-color: green; */
+    color: var(--text-color-light);
+    color: green;
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border: 2px solid green;
+    border-radius: 2.25rem;
+    font: 500 1rem var(--body-font);
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: var(--base-color-alt);
+}
+
+/*==== botão amburguer =======*/
+#btn-mobile {
+    display: none; /* esconde o botão */
+}
+
+/*============ HEADER =================== */
+
+#header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font: 700 var(--title-font-size) var(--title-font);
+    color: var(--title-color);
+    -webkit-font-smoothing: auto;
+}
+
+.subtitle {
+    color: var(--title-color);
+}
+/* ===== BASE =======*/
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* ===== HOME =======*/
+.container .associacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--base-color);
+}
+
+.section .container .associacao img {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    clip-path: circle();    
+}
+
+.section .container .inner {
+    padding: 1rem;
+    text-align: center;
+}
+
+.section .container .inner p {
+    margin-top: 2rem;
+}
+
+.container-two .title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card_banner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 1fr;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: rgb(245 227 106 / 44%);
+}
+
+.card_banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pg {
+    text-align: center;
+}
+
+.pg h2 {
+    color: var(--title-color);
+    padding: 14px;
+}
+
+.pg p {
+    padding: 15px;
+}
+
+.pg span {
+    color: green;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    display: inline;
+}
+
+/* ===== HISTORIA =======*/
+.card-text {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgb(247, 244, 225);
+    /* box-shadow: 4px 5px 9px rgba(63, 63, 63, 0.385); */
+    
+
+    margin-bottom: 30px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} */
+
+.icon i {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3rem;
+    color: var(--title-color);
+    background: rgb(201, 250, 193);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+/* ===== PARCEIROS =======*/
+.container .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .cards .card h2 {
+    margin: 20px 0 20px 0;
+}
+
+.container .cards .card img {
+    width: 15rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ========== CONTATO ========== */
+.container .grid {
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.container .text p {
+    margin-bottom: 2rem;
+}
+
+.container .button i,
+ul li i {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+}
+
+.container ul.grid {
+    gap: 2rem;
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+}
+
+.container ul li i {
+    color: green;
+}
+
+
+/* ========== FOOTER ========== */
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+footer {
+    background: var(--base-color);
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .brand {
+    margin-top: 1rem;
+
+}
+
+footer .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social i {
+    color: green;
+    font-size: 1.5rem;
+}
+
+footer #logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: green;
+    font-weight: bold;
+    font-size: var(--title-font);
+}
+
+footer i {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+footer .social a {
+    margin-right: 2rem;
+}
+
+
+/* tudo que estiver a baixo de 600px vai ser aplicado*/
+@media (max-width: 600px) {
+    #menu {
+        display: block; /* menus um abaixo do outro */
+        /*display: block; /*deixa os menus um abixo do outro*/ 
+        position: absolute; /* deixa o menu por cima */
+        width: 100%; /*deixa do tamanho da tela*/
+        top: 70px; /* deixa ele do mesmo tamanho to header e ele desse 70px*/
+        right: 0px; /*leva os menus para o lado esquerdo*/
+        background: var(--base-color);
+
+
+        /* ANIMAÇÃO */
+        transition: .6s;
+        z-index: 1000; /* isso garante que ele fica por cima de tudo*/
+        height: 0px; /* começa a animação de cima para baixo*/
+        /*VAI COMEÇAR ESCONDIDO 01 */
+        visibility: hidden;  
+        overflow-y: hidden; /* esconde os menus com o efeito*/
+    }
+    /*quando clicar no menu ele volta ao normal*/
+    #nav.active #menu {  
+
+        height: calc(100vh - 70px); /*fica do tamano da tela só que ele cria uma barra de rolagem na lateral por que ele soma 100vh mais os 70px do top*/ 
+        /* FAZ O MENU APARECER 02 */
+        visibility: visible; 
+        overflow-y: auto; /* se caso tiver bastante menu de links ele fica automatico e faz aparecer */
+        /* vai ficar assim */   
+        /* display: block; /* sobre Produtos Portifólio Contato */
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--title-color);
+        color: var(--title-color);
+        text-align: center;
+        font-weight: bold;
+    }
+    /*botão menu*/
+    #btn-mobile {
+        display: flex; 
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: var(--title-color);
+    }
+
+    /* .button {
+        background-color: green;
+        color: var(--text-color-light);
+        height: 3rem;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 1rem;
+        border-radius: 0.25rem;
+        font: 500 1rem var(--body-font);
+        transition: background 0.3s;
+    } */
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor; /*currentColor é uma variavel*/
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent; /*na hora que clicar some o primeiro pauzinho do menu amburguer ele fica transparente */
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    } 
+
+    #logo {
+        font: 700 1rem 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    /* ===== BASE ==========*/
+
+    .container {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    .container .associacao {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* home */
+    .section .container .associacao img {
+        width: 10rem;
+        height: 10rem;  
+    }
+
+    .card_banner {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    
+    .card_banner img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .pg p {
+        padding: 6px;
+    }
+    
+   
+    /*== HISTORIAS ===*/
+    .container .title {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .card-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* text-align: center;        */
+    }
+
+    .subtitle {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+    
+/* ===== PARCEIROS =======*/
+    .container .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    /* footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+    footer .brand {
+        margin-bottom: 2rem;
+    }
+
+}
