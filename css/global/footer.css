@@ -10,6 +10,7 @@
 }
 
 .ft-subtitle {
+    font: 400 1.20rem 'Poppins', sans-serif;
     margin: 10px 0 40px 0;
     text-align: center;
     display: flex;
