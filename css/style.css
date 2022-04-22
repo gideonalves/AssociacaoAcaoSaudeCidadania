@@ -9,3 +9,6 @@
 
 /* Home */
 @import "./home/associacao.css";
+
+/* Historia */
+@import "./historia/historia.css";
