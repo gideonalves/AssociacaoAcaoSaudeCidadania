@@ -15,3 +15,6 @@
 
 /* Parceiros */
 @import "./parceiros/parceiros.css";
+
+/* Contato */
+@import "./contato/contato.css";

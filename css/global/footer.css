@@ -9,34 +9,9 @@
     text-align: center;
 }
 
-.ft-subtitle {
-    font: 400 1.20rem 'Poppins', sans-serif;
-    margin: 10px 0 40px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: var(--cor-1);
-}
 
-.ft-subtitle:after,
-.ft-subtitle:before {
-    flex-grow: 1;
-    height: 2px;
-    content: '\a0';
-    background-color: var(--cor-1);
-    position: relative;
-    top: 0.5em;
-}
 
-.ft-subtitle:before {
-    margin-right: 10px;
-}
 
-.ft-subtitle:after {
-    margin-left: 10px;
-}
 
 .footer-rede-sociais {
     margin: 0px 0 30px 0;
