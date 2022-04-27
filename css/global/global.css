@@ -16,10 +16,11 @@
 }
 
 body {
+
     font: 400 1rem 'DM Sans', sans-serif;
     /*  400 é o peso da fonte e 1rem o tamanho da font = 16px    */
-    color: var(--text-color);
-    background: var(--body-color);
+    /* color: var(--text-color); */
+    background: var(--cor-4);
     -webkit-font-smoothing: antialiased;
     /* Deixa a font mais fininha */
     margin: 0;

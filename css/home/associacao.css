@@ -1,3 +1,7 @@
+#index {
+    background: var(--cor-4);
+}
+
 .associacao {
     padding: 20px 0 20px 0;
     display: flex;
