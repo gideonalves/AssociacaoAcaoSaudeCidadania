@@ -3,7 +3,6 @@
 }
 
 .header {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -14,8 +13,6 @@
 }
 
 .header #logo {
-    /* border: 1px solid red; */
-
     color: var(--cor-1);
     font: 700 1.9rem 'Poppins', sans-serif;
 }
