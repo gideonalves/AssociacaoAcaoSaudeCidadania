@@ -3,8 +3,8 @@
 $email = "contato@aasc.com.br";
 $senha = "contato@2022";
 
-$smtp = "smtp.titan.email";
-$porta = 465;
+$smtp = "smtp.kinghost.net";
+$porta = 587;
 
 $email_contato = "teste@bikcraft.net";
 
