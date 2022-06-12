@@ -9,6 +9,7 @@
 
 /* Home */
 @import "./home/associacao.css";
+@import "./home/container-corrossel.css";
 
 /* Historia */
 @import "./historia/historia.css";
