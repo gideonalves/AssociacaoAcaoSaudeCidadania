@@ -20,8 +20,6 @@ btnMobile.addEventListener("click", togglemenu)
 btnMobile.addEventListener("touchstart", togglemenu)/*para tira o delei na hora do click */
 
 
-
-
 // Ativar links do Menu
 const links = document.querySelectorAll('.header-menu a')
 
