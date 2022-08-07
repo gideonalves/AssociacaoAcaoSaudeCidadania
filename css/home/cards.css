@@ -1,0 +1,27 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.cards img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 500px;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards img {
+        margin-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

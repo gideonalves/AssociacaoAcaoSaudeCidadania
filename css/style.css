@@ -1,0 +1,22 @@
+@import "./global/global.css";
+@import "./utilidades/animacao.css";
+
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilidades */
+@import "./utilidades/componentes.css";
+
+/* Home */
+@import "./home/associacao.css";
+@import "./home/container-corrossel.css";
+@import "./home/cards.css";
+
+/* Historia */
+@import "./historia/historia.css";
+
+/* Parceiros */
+@import "./parceiros/parceiros.css";
+
+/* Contato */
+@import "./contato/contato.css";

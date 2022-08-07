@@ -1,0 +1,40 @@
+#index {
+    background: var(--cor-4);
+}
+
+.associacao {
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.associacao img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    clip-path: circle();
+    margin-right: 80px;
+}
+
+.associacao p {
+    font: 400 1.30rem 'Poppins', sans-serif;
+    color: var(--cor-1);
+}
+
+@media (max-width: 600px) {
+    .associacao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .associacao img {
+        margin-right: 0;
+        margin-bottom: 20px;
+
+    }
+
+    .associacao p {
+        text-align: center;
+    }
+}
