@@ -2,7 +2,8 @@
     /* Cores */
     --cor-1: rgb(12, 133, 20);
     --cor-2: rgb(234, 205, 16);
-    --cor-3: #f0ff81;
+    --cor-3: #f4fda5;
+    --cor-background: #f0ff81;
     --cor-4: #f7f7f7;
     --cor-5: #ededed;
 
@@ -20,7 +21,7 @@ body {
     font: 400 1rem 'DM Sans', sans-serif;
     /*  400 é o peso da fonte e 1rem o tamanho da font = 16px    */
     /* color: var(--text-color); */
-    background: var(--cor-4);
+    background: var(--cor-3);
     -webkit-font-smoothing: antialiased;
     /* Deixa a font mais fininha */
     margin: 0;

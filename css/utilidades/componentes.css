@@ -7,6 +7,11 @@
     margin-right: auto;
 }
 
+.wrapper {
+    margin-top: 120px;
+    background: var(--cor-5);
+}
+
 .title {
     font: 700 1.5rem 'Poppins', sans-serif;
     color: var(--cor-1);
