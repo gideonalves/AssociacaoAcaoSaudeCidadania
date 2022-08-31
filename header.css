@@ -1,0 +1,258 @@
+.header-bg {
+    background-color: var(--cor-3);
+    border-bottom: 2px solid var(--cor-1);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    align-items: center;
+    padding: 20px;
+
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.header #logo {
+    color: var(--cor-1);
+    font: 700 1.9rem 'Poppins', sans-serif;
+}
+
+.header span {
+    color: var(--cor-2);
+}
+
+.header-menu {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-menu a {
+    display: inline-block;
+    padding: 16px 0px;
+    position: relative;
+    font: 700 1.20rem 'Poppins', sans-serif;
+    color: var(--cor-1);
+}
+
+.header-menu a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: var(--cor-1);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
+    width: 100%;
+}
+
+/*==== botão amburguer =======*/
+#btn-mobile {
+    display: none;
+    /* esconde o botão */
+}
+
+/* Menu mobile */
+
+
+
+/* 
+@media (max-width: 800px) {
+    .header-menu {
+        gap: 20px;
+    }
+
+    .header-menu a {
+        background: var(--cor-11);
+        padding: 12px 16px;
+        border-radius: 4px;
+    }
+
+    .header-menu a:hover {
+        background-color: var(--cor-10);
+    }
+
+    .header a:after {
+        display: none;
+    }
+
+} */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px 5px 20px 5px;
+    }
+
+    .header #logo {
+        /* padding-top: 20px; */
+        font: 700 1rem 'Poppins', sans-serif;
+    }
+
+    .header-menu {
+        display: block;
+        /* menus um abaixo do outro */
+        /*display: block; /*deixa os menus um abixo do outro*/
+        position: absolute;
+        /* deixa o menu por cima */
+        width: 50%;
+        /*deixa do tamanho da tela*/
+        top: 74px;
+        /* deixa ele do mesmo tamanho to header e ele desse 70px*/
+        left: 0px;
+        /*leva os menus para o lado esquerdo*/
+        background: var(--cor-2);
+
+
+        /* ANIMAÇÃO */
+        transition: .6s;
+        z-index: 1000;
+        /* isso garante que ele fica por cima de tudo*/
+        height: 0px;
+        /* começa a animação de cima para baixo*/
+        /*VAI COMEÇAR ESCONDIDO 01 */
+        visibility: hidden;
+        overflow-y: hidden;
+        /* esconde os menus com o efeito*/
+    }
+
+    /*quando clicar no menu ele volta ao normal*/
+    #nav.active .header-menu {
+        height: calc(100vh - 70px);
+        /*fica do tamano da tela só que ele cria uma barra de rolagem na lateral por que ele soma 100vh mais os 70px do top*/
+        /* FAZ O MENU APARECER 02 */
+        visibility: visible;
+        overflow-y: auto;
+        /* se caso tiver bastante menu de links ele fica automatico e faz aparecer */
+        /* vai ficar assim */
+        /* display: block; /* sobre Produtos Portifólio Contato */
+    }
+
+    .header-menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(red);
+        color: var(--title-color);
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /*botão menu*/
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: var(--cor-1);
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        /*currentColor é uma variavel*/
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+        /*na hora que clicar some o primeiro pauzinho do menu amburguer ele fica transparente */
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .header-bg {
+        display: flex;
+        /* text-align: center; */
+        margin: 0 auto;
+    }
+
+}
+
+/*
+
+    .header-menu {
+        border: 1px solid rgb(255, 0, 200);
+        margin-top: 20px;
+        gap: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .header-menu a {
+        padding: 8px 12px;
+        font-size: 25px;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: red;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor; *
+    /*currentColor é uma variavel*
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+*/
